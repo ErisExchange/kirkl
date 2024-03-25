@@ -1,0 +1,12 @@
+cancel_replace_reject_reason_idx" btree (cancel_replace_reject_reason)				Cancel Replace reject reason
+    "ord_execution_time_idx" btree (ord_execution_time DESC)					Transaction Time
+"ord_order_status_execution_time_idx" btree (ord_order_status, ord_execution_time DESC)		Order Status
+    "ord_product_code_idx" btree (ord_product_code)						Product
+    "place_reject_reason_idx" btree (place_reject_reason)					Place Reject Reason
+    "trgm_ins_symbol_idx_idx" gin (ins_symbol gin_trgm_ops)  					Symbol
+    "trgm_ord_algo_type_idx" gin (ord_algo_type gin_trgm_ops)					Algo Type
+    "trgm_ord_routing_username_idx" gin (ord_routing_username gin_trgm_ops)			Routing user name
+    "trgm_ord_username_idx" gin (ord_username gin_trgm_ops)					USER NAME
+    "trgm_order_history_account_number_idx" gin (ord_account_number gin_trgm_ops) 		acc. number
+
+s
